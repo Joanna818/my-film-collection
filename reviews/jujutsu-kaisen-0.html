@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 依 AGENTS.md：格式為「片名｜片單收藏室」 -->
+  <title>劇場版 咒術迴戰 0｜片單收藏室</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<!-- data-film-id 必須與 data/films.js 的 id、本檔檔名相同 -->
+<body data-film-id="jujutsu-kaisen-0">
+
+  <header class="site-header">
+    <a class="brand" href="../index.html">片單收藏室</a>
+    <nav class="site-nav">
+      <a href="../index.html">片單</a>
+      <a href="../about.html">關於</a>
+    </nav>
+  </header>
+
+  <main class="review">
+    <a class="back-link" href="../index.html">← 回到片單</a>
+
+    <!-- 1. 基本資料、2. 一句話短評：由 main.js 從 films.js 自動帶入，不要手寫 -->
+    <section class="review-hero" id="film-info"></section>
+
+    <!-- 3. 簡介：80 到 150 字，只寫開頭設定 -->
+    <section class="review-section" id="synopsis">
+      <h2>簡介</h2>
+      <p>高中生乙骨憂太小時候失去了青梅竹馬祈本里香，之後里香化為強大的特級怨靈跟在他身邊，傷害任何靠近憂太的人。憂太因此不敢和別人親近。後來他被五條悟帶進東京都立咒術高等專門學校，和禪院真希、狗卷棘、熊貓成為同學，開始學習面對里香的力量，也第一次找到屬於自己的位置。</p>
+    </section>
+
+    <!-- 4. 無雷心得：200 到 400 字，第一人稱，2 到 3 段 -->
+    <section class="review-section" id="thoughts">
+      <h2>無雷心得</h2>
+      <p>咒術迴戰 0 最打動我的是角色之間的感情。憂太一開始覺得自己只會帶給別人麻煩，總是一個人躲起來。進入咒術高專之後，他遇到真希、狗卷和熊貓，這幾個同學看起來都有點怪，但相處起來很溫暖，看他們慢慢接納彼此，我覺得很感動。</p>
+      <p>憂太和里香之間的感情，是這部我最喜歡的地方。那是一段很純粹的愛，不管里香變成什麼樣子，那份感情都一直在。看到最後，我更能感受到這份感情有多重，也忍不住偷偷擦了眼淚。</p>
+      <p>打鬥場面也很好看，動作流暢、特效華麗，配樂也很熱血。這部是前傳，故事發生在動畫第一季之前，就算沒看過動畫也能直接看懂。</p>
+    </section>
+
+    <!-- 5. 推薦對象：各 2 到 3 點 -->
+    <section class="review-section" id="recommend">
+      <h2>推薦對象</h2>
+      <div class="rec-grid">
+        <div class="rec rec-yes">
+          <h3>適合你，如果……</h3>
+          <ul>
+            <li>喜歡熱血戰鬥又重感情的動畫</li>
+            <li>想看純愛故事</li>
+            <li>沒看過咒術迴戰，想先入門</li>
+          </ul>
+        </div>
+        <div class="rec rec-no">
+          <h3>可能不適合，如果……</h3>
+          <ul>
+            <li>不喜歡血腥打鬥或怪物畫面</li>
+            <li>不習慣日本動畫的畫風</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 個人評分：星星與哭點指數自動帶入，下方寫一句評分理由 -->
+    <section class="review-section" id="score">
+      <h2>個人評分</h2>
+      <div class="rating-display" id="rating-display"></div>
+      <p class="rating-reason">熱血戰鬥加上純愛，角色之間的羈絆讓我一看就愛上。</p>
+    </section>
+
+    <p class="added-date" id="added-date"></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>片單收藏室 · 所有心得皆無雷</p>
+    <p>海報版權屬原片商所有，僅供心得介紹使用。</p>
+  </footer>
+
+  <script src="../data/films.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

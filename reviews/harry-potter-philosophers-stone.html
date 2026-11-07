@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 依 AGENTS.md：格式為「片名｜片單收藏室」 -->
+  <title>哈利波特：神秘的魔法石｜片單收藏室</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<!-- data-film-id 必須與 data/films.js 的 id、本檔檔名相同 -->
+<body data-film-id="harry-potter-philosophers-stone">
+
+  <header class="site-header">
+    <a class="brand" href="../index.html">片單收藏室</a>
+    <nav class="site-nav">
+      <a href="../index.html">片單</a>
+      <a href="../about.html">關於</a>
+    </nav>
+  </header>
+
+  <main class="review">
+    <a class="back-link" href="../index.html">← 回到片單</a>
+
+    <!-- 1. 基本資料、2. 一句話短評：由 main.js 從 films.js 自動帶入，不要手寫 -->
+    <section class="review-hero" id="film-info"></section>
+
+    <!-- 3. 簡介：80 到 150 字，只寫開頭設定 -->
+    <section class="review-section" id="synopsis">
+      <h2>簡介</h2>
+      <p>哈利從小寄住在對他很冷淡的姨丈一家，睡在樓梯下的儲物櫃裡。十一歲生日那天，巨人海格找上門，告訴他其實是個巫師，並帶他進入霍格華茲魔法學校。在那裡，他認識了榮恩和妙麗，第一次體驗魔法課、會動的樓梯和魁地奇比賽，也慢慢發現學校裡似乎藏著一個不尋常的祕密。</p>
+    </section>
+
+    <!-- 4. 無雷心得：200 到 400 字，第一人稱，2 到 3 段 -->
+    <section class="review-section" id="thoughts">
+      <h2>無雷心得</h2>
+      <p>哈利波特最讓我著迷的是它的想像力。整個魔法世界的細節多到看不完，會動的樓梯、會說話的畫像、送信的貓頭鷹，還有決定你屬於哪個學院的分類帽。每個設定都好像真的存在，看的時候會一直想，如果我也能收到霍格華茲的入學通知就好了。</p>
+      <p>故事從哈利在姨丈家被欺負開始，到他第一次走進魔法世界，那種從平凡生活一下子跳進新世界的感覺很過癮。他和榮恩、妙麗三個人個性很不一樣，卻剛好可以互補，看他們一起冒險很有趣。</p>
+      <p>這部是整個系列的第一集，氣氛比後面幾集輕鬆溫暖，很適合當作進入魔法世界的第一站。片長雖然有兩個半小時，但我看的時候一點都不覺得長。</p>
+    </section>
+
+    <!-- 5. 推薦對象：各 2 到 3 點 -->
+    <section class="review-section" id="recommend">
+      <h2>推薦對象</h2>
+      <div class="rec-grid">
+        <div class="rec rec-yes">
+          <h3>適合你，如果……</h3>
+          <ul>
+            <li>喜歡奇幻、冒險、魔法題材</li>
+            <li>想找全家都能一起看的電影</li>
+            <li>還沒看過哈利波特，想從頭開始</li>
+          </ul>
+        </div>
+        <div class="rec rec-no">
+          <h3>可能不適合，如果……</h3>
+          <ul>
+            <li>不喜歡太長的電影</li>
+            <li>對魔法、奇幻設定沒有興趣</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 個人評分：星星與哭點指數自動帶入，下方寫一句評分理由 -->
+    <section class="review-section" id="score">
+      <h2>個人評分</h2>
+      <div class="rating-display" id="rating-display"></div>
+      <p class="rating-reason">想像力豐富到讓人想住進那個世界，是奇幻電影的經典。</p>
+    </section>
+
+    <p class="added-date" id="added-date"></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>片單收藏室 · 所有心得皆無雷</p>
+    <p>海報版權屬原片商所有，僅供心得介紹使用。</p>
+  </footer>
+
+  <script src="../data/films.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

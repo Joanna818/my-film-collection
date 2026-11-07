@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>片單收藏室</title>
+  <meta name="description" content="個人電影、影集、動畫的無雷心得收藏。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">片單收藏室</a>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">片單</a>
+      <a href="about.html">關於</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">NOW SHOWING</p>
+      <h1>片單收藏室</h1>
+      <p class="lead">燈暗了，來聊聊我看過的電影、影集和動畫。每篇心得都無雷，沒看過也能放心讀。</p>
+      <hr class="hero-rule">
+    </section>
+
+    <section class="filters" aria-label="篩選作品">
+      <div class="filter-group" id="type-filters"></div>
+      <div class="filter-group" id="tag-filters"></div>
+      <p class="film-count" id="film-count"></p>
+    </section>
+
+    <section class="film-grid" id="film-grid"></section>
+    <p class="empty" id="empty-msg" hidden>這個分類還沒有作品。</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>片單收藏室 · 所有心得皆無雷</p>
+    <p>海報版權屬原片商所有，僅供心得介紹使用。</p>
+  </footer>
+
+  <script src="data/films.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

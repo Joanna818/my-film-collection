@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 依 AGENTS.md：格式為「片名｜片單收藏室」 -->
+  <title>愛上觸不到的你｜片單收藏室</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<!-- data-film-id 必須與 data/films.js 的 id、本檔檔名相同 -->
+<body data-film-id="five-feet-apart">
+
+  <header class="site-header">
+    <a class="brand" href="../index.html">片單收藏室</a>
+    <nav class="site-nav">
+      <a href="../index.html">片單</a>
+      <a href="../about.html">關於</a>
+    </nav>
+  </header>
+
+  <main class="review">
+    <a class="back-link" href="../index.html">← 回到片單</a>
+
+    <!-- 1. 基本資料、2. 一句話短評：由 main.js 從 films.js 自動帶入，不要手寫 -->
+    <section class="review-hero" id="film-info"></section>
+
+    <!-- 3. 簡介：80 到 150 字，只寫開頭設定 -->
+    <section class="review-section" id="synopsis">
+      <h2>簡介</h2>
+      <p>十七歲的史黛拉患有囊腫性纖維化，長年住院治療，習慣把每天的服藥和復健排得一絲不苟。她在醫院遇見同樣患病、對治療滿不在乎的威爾。因為病友之間很容易互相感染，兩人必須隨時保持六英尺的距離，不能靠近，更不能碰觸。從看不順眼到慢慢在意彼此，他們開始思考，在這樣的限制下，喜歡一個人可以是什麼樣子。</p>
+    </section>
+
+    <!-- 4. 無雷心得：200 到 400 字，第一人稱，2 到 3 段 -->
+    <section class="review-section" id="thoughts">
+      <h2>無雷心得</h2>
+      <p>這部真的很感人，我看到哭很慘。故事的設定很簡單，兩個人明明互相喜歡，卻連牽手都不行，只能隔著一段距離看著對方。一開始我以為「六英尺」只是一個設定，看下去才發現，這段距離把每個小動作都放大了，一個眼神、一通視訊、一起在醫院走廊散步，都變得很珍貴。</p>
+      <p>我很喜歡史黛拉和威爾一開始個性完全相反，一個什麼都要照計畫來，一個什麼都不在乎，兩個人互相影響、慢慢改變的過程很自然。電影也讓我看到這些病人每天要面對的治療有多辛苦，他們想要的其實只是很普通的生活。</p>
+      <p>後半段我幾乎是一路哭到片尾，建議先準備好衛生紙。看完會很想好好珍惜身邊可以擁抱的人。</p>
+    </section>
+
+    <!-- 5. 推薦對象：各 2 到 3 點 -->
+    <section class="review-section" id="recommend">
+      <h2>推薦對象</h2>
+      <div class="rec-grid">
+        <div class="rec rec-yes">
+          <h3>適合你，如果……</h3>
+          <ul>
+            <li>想好好哭一場，喜歡催淚愛情片</li>
+            <li>喜歡青春戀愛題材</li>
+            <li>想看設定特別、有限制的愛情故事</li>
+          </ul>
+        </div>
+        <div class="rec rec-no">
+          <h3>可能不適合，如果……</h3>
+          <ul>
+            <li>最近心情比較低落，不想被虐</li>
+            <li>不喜歡醫院、疾病相關的題材</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 個人評分：星星與哭點指數自動帶入，下方寫一句評分理由 -->
+    <section class="review-section" id="score">
+      <h2>個人評分</h2>
+      <div class="rating-display" id="rating-display"></div>
+      <p class="rating-reason">設定簡單，卻讓我哭到停不下來，是我心中的催淚滿分作品。</p>
+    </section>
+
+    <p class="added-date" id="added-date"></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>片單收藏室 · 所有心得皆無雷</p>
+    <p>海報版權屬原片商所有，僅供心得介紹使用。</p>
+  </footer>
+
+  <script src="../data/films.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
